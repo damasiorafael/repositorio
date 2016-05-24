@@ -134,7 +134,8 @@ body {
 .title-header {
 	color: #4d4d4f;
 	font-size: 24px;
-	padding: 38px 0 20px 28px;
-	display: inline;
+	padding: 38px 0 30px 28px;
+	display: inline-block;
+	margin: 0;
 	background: url(../../../image/border-title.jpg) no-repeat 0 0;
 }
