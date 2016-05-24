@@ -130,15 +130,16 @@
 %>
             <div class="container">
                 <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                  <a class="navbar-brand" href="<%= request.getContextPath() %>/">
-                    <img height="25" src="<%= request.getContextPath() %>/image/logo.png" alt="Kroton - Repositório Institucional" />
-                  </a>
-               </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<%= request.getContextPath() %>/">
+                        <img src="<%= request.getContextPath() %>/image/logo.png" alt="Kroton - Repositório Institucional" />
+                    </a>
+                    <h1 class="title-header">Repositório Institucional</h1>
+                </div>
 
                 <dspace:include page="<%= navbar %>" />
             </div>

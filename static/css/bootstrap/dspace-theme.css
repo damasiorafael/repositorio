@@ -115,6 +115,26 @@ body {
 	padding-top: 0!important;
 }
 .navbar {
-	margin-bottom: 0;
-	padding-bottom: 0;
+	margin: 0;
+	padding: 17px 0 14px;
+	background: #DBDBDB;
+}
+.navbar-header {
+	width: 100%;
+}
+.navbar-brand {
+	width: auto;
+	padding: 14px 28px 0 0;
+	display: inline;
+}
+.navbar-brand img {
+	width: auto;
+}
+
+.title-header {
+	color: #4d4d4f;
+	font-size: 24px;
+	padding: 38px 0 20px 28px;
+	display: inline;
+	background: url(../../../image/border-title.jpg) no-repeat 0 0;
 }
