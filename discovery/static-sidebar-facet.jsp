@@ -60,7 +60,7 @@
 	}
 	if (brefine) {
 %>
-<div class="col-md-<%= discovery_panel_cols %>">
+<div class="col-md-3">
 <h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3>
 <div id="facets" class="facetsBox row panel">
 <%
@@ -78,7 +78,7 @@
  	    }
 	    String fkey = "jsp.search.facet.refine."+f;
 	    int limit = facetConf.getFacetLimit()+1;
-	    %><div id="facet_<%= f %>" class="facet col-md-<%= discovery_facet_cols %>">
+	    %><div id="facet_<%= f %>" class="facet col-md-12">
 	    <span class="facetName"><fmt:message key="<%= fkey %>" /></span>
 	    <ul class="list-group"><%
 	    int idx = 1;

@@ -156,7 +156,7 @@ if (submissions != null && submissions.count() > 0)
 	if (communities != null && communities.length != 0)
 	{
 %>
-		<div class="col-md-9">
+		<div class="col-md-9 comuns-kroton">
                <h3><fmt:message key="jsp.home.com1"/></h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
@@ -195,8 +195,8 @@ if (submissions != null && submissions.count() > 0)
 }
 %>
 	<%
-    	int discovery_panel_cols = 8;
-    	int discovery_facet_cols = 4;
+    	int discovery_panel_cols = 3;
+    	int discovery_facet_cols = 3;
     %>
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
 </div>
