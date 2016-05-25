@@ -66,6 +66,15 @@ body {
 	padding-left: 0!important;
 }
 
+.comuns-kroton .list-group-item {
+	background-color: #fff;
+    border: none;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 15px 10px 0;
+    position: relative;
+}
+
 .facet-kroton {
 	padding-right: 0!important;
 }
