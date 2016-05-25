@@ -331,7 +331,7 @@ body {
 	display: inline-block;
 	margin-left: 5px;
 	border-left: 2px solid #FFF;
-	padding-left: 5px;
+	padding-left: 10px;
 }
 .breadcrumb li:first-child {
 	margin-left: 0;
