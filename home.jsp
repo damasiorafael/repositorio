@@ -156,7 +156,7 @@ if (submissions != null && submissions.count() > 0)
 	if (communities != null && communities.length != 0)
 	{
 %>
-		<div class="col-md-4">		
+		<div class="col-md-9">
                <h3><fmt:message key="jsp.home.com1"/></h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
