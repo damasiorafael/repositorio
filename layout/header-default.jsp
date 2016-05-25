@@ -146,6 +146,7 @@
 </header>
 
 <main id="content" role="main">
+<%= /*
 <div class="container banner">
 	<div class="row">
 		<div class="col-md-9 brand">
@@ -157,6 +158,7 @@
 	</div>
 </div>	
 <br/>
+*/ %>
                 <%-- Location bar --%>
 <%
     if (locbar)
