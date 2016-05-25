@@ -78,7 +78,7 @@
  	    }
 	    String fkey = "jsp.search.facet.refine."+f;
 	    int limit = facetConf.getFacetLimit()+1;
-	    %><div id="facet_<%= f %>" class="facet col-md-12">
+	    %><div id="facet_<%= f %>" class="facet facet-kroton col-md-12">
 	    <span class="facetName"><fmt:message key="<%= fkey %>" /></span>
 	    <ul class="list-group"><%
 	    int idx = 1;
