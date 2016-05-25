@@ -38,9 +38,10 @@
 </div>
 </main>
             <%-- Page footer --%>
-             <footer class="navbar navbar-inverse navbar-bottom">
+            <%= /*
+             <footer>
              <div id="designedby" class="container text-muted">
-             <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
+                <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
                                     src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
                                     alt="Logo CINECA" /></a>
 			<div id="footer_feedback" class="pull-right">                                    
@@ -50,5 +51,6 @@
                                 </div>
 			</div>
     </footer>
+    */ %>
     </body>
 </html>
