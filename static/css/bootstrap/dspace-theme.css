@@ -114,7 +114,7 @@ span.batchimport-error-caused {
 body {
 	padding-top: 0!important;
 }
-.navbar {
+header.navbar {
 	margin: 0;
 	padding: 17px 0 14px;
 	background: #DBDBDB;
