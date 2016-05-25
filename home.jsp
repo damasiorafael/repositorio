@@ -43,6 +43,25 @@
 
     Locale sessionLocale = UIUtil.getSessionLocale(request);
     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
+
+    //header
+    String title = (String) request.getAttribute("dspace.layout.title");
+    String navbar = (String) request.getAttribute("dspace.layout.navbar");
+    boolean locbar = ((Boolean) request.getAttribute("dspace.layout.locbar")).booleanValue();
+
+    String siteName = ConfigurationManager.getProperty("dspace.name");
+    String feedRef = (String)request.getAttribute("dspace.layout.feedref");
+    boolean osLink = ConfigurationManager.getBooleanProperty("websvc.opensearch.autolink");
+    String osCtx = ConfigurationManager.getProperty("websvc.opensearch.svccontext");
+    String osName = ConfigurationManager.getProperty("websvc.opensearch.shortname");
+    List parts = (List)request.getAttribute("dspace.layout.linkparts");
+    String extraHeadData = (String)request.getAttribute("dspace.layout.head");
+    String extraHeadDataLast = (String)request.getAttribute("dspace.layout.head.last");
+    String dsVersion = Util.getSourceVersion();
+    String generator = dsVersion == null ? "DSpace" : "DSpace "+dsVersion;
+    String analyticsKey = ConfigurationManager.getProperty("jspui.google.analytics.key");
+    //header
+
     String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html"));
     String sideNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-side.html"));
    
