@@ -66,9 +66,11 @@ body {
 	padding-left: 0!important;
 }
 
+
 .comuns-kroton .list-group {
-	box-shadow: 0;
+	box-shadow: none!important;
 }
+
 .comuns-kroton .list-group-item {
 	background-color: #fff;
     border: none;
