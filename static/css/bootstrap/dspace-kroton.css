@@ -9,6 +9,9 @@ body {
 	padding-bottom: 0;
 	background: #DBDBDB;
 }
+.navbar-header {
+	width: 100%;
+}
 
 .breadcrumb {
 	border-radius: 0;

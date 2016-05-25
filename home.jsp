@@ -60,10 +60,6 @@
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
-	<div class="jumbotron">
-        <%= topNews %>
-	</div>
-
 <div class="row">
 <%
 if (submissions != null && submissions.count() > 0)
@@ -153,9 +149,7 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-4">
-    <%= sideNews %>
-</div>
+
 </div>
 <div class="container row">
 <%
