@@ -124,7 +124,7 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-fixed-top">
+<header class="navbar">
     <%
     if (!navbar.equals("off"))
     {
