@@ -329,6 +329,12 @@ body {
 }
 .breadcrumb li {
 	display: inline-block;
+	margin-left: 5px;
+	border-left: 2px solid #FFF;
+}
+.breadcrumb li:first-child {
+	margin-left: 0;
+	border-left: none;
 }
 
 .comuns-kroton {
