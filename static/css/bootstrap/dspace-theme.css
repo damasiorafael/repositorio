@@ -114,28 +114,7 @@ span.batchimport-error-caused {
 body {
 	padding-top: 0!important;
 }
-header.navbar {
-	margin: 0;
-	padding: 17px 0 14px;
-	background: #DBDBDB;
-}
-.navbar-header {
-	width: 100%;
-}
-.navbar-brand {
-	width: auto;
-	padding: 14px 28px 0 0;
-	display: inline;
-}
-.navbar-brand img {
-	width: auto;
-}
-
-.title-header {
-	color: #4d4d4f;
-	font-size: 24px;
-	padding: 38px 0 30px 28px;
-	display: inline-block;
-	margin: 0;
-	background: url(../../../image/border-title.jpg) no-repeat 0 0;
+.navbar {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }

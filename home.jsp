@@ -43,27 +43,6 @@
 
     Locale sessionLocale = UIUtil.getSessionLocale(request);
     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
-
-    //header
-    /*
-    String title = (String) request.getAttribute("dspace.layout.title");
-    String navbar = (String) request.getAttribute("dspace.layout.navbar");
-    boolean locbar = ((Boolean) request.getAttribute("dspace.layout.locbar")).booleanValue();
-
-    String siteName = ConfigurationManager.getProperty("dspace.name");
-    String feedRef = (String)request.getAttribute("dspace.layout.feedref");
-    boolean osLink = ConfigurationManager.getBooleanProperty("websvc.opensearch.autolink");
-    String osCtx = ConfigurationManager.getProperty("websvc.opensearch.svccontext");
-    String osName = ConfigurationManager.getProperty("websvc.opensearch.shortname");
-    List parts = (List)request.getAttribute("dspace.layout.linkparts");
-    String extraHeadData = (String)request.getAttribute("dspace.layout.head");
-    String extraHeadDataLast = (String)request.getAttribute("dspace.layout.head.last");
-    String dsVersion = Util.getSourceVersion();
-    String generator = dsVersion == null ? "DSpace" : "DSpace "+dsVersion;
-    String analyticsKey = ConfigurationManager.getProperty("jspui.google.analytics.key");
-    */
-    //header
-
     String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html"));
     String sideNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-side.html"));
    
@@ -178,44 +157,38 @@ if (communities != null && communities.length != 0)
 {
 %>
 	<div class="col-md-9">		
-		<h3><fmt:message key="jsp.home.com1"/></h3>
-		<p><fmt:message key="jsp.home.com2"/></p>
-		<div class="list-group">
+               <h3><fmt:message key="jsp.home.com1"/></h3>
+                <p><fmt:message key="jsp.home.com2"/></p>
+				<div class="list-group">
 <%
-		boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
-	    for (int i = 0; i < communities.length; i++)
-	    {
-%>
-			<div class="list-group-item row">
+	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+    for (int i = 0; i < communities.length; i++)
+    {
+%><div class="list-group-item row">
 
-				<div class="col-md-12">
+	<div class="col-md-12">
 		
-					<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
+		<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
 <%
-				        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
-				        {
+        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
+        {
 %>
-							<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
+		<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
 <%
-        				}
+        }
+
 %>
-					</h4>
-					<p>
-						<%= communities[i].getMetadata("short_description") %>
-					</p>
-    			</div>
-			</div>
+		</h4>
+		<p><%= communities[i].getMetadata("short_description") %></p>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>                            
 <%
-    	}
+    }
 %>
-		</div>
 	</div>
-	<div class="col-md-3">
-		<%= 
-		/*
-		<dspace:include page="<%= navbar %>" />
-		*/
-		%>
 	</div>
 <%
 }
