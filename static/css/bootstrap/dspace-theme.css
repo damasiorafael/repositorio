@@ -363,11 +363,11 @@ body {
 
 .facet-kroton {
 	background: #F7F7F7;
+	margin-top: -15px;
 }
 .facet-kroton #facets {
 	background: transparent;
 	border: none;
-	margin-top: -15px;
 }
 
 .facetsBox .facet .facetName {
