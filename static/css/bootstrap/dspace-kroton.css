@@ -11,5 +11,6 @@ body {
 }
 
 .breadcrumb {
- background: #00ADEE!important;
+	border-radius: 0;
+	background: #00ADEE!important;
 }
