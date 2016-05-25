@@ -25,7 +25,7 @@ body {
 	padding: 38px 0 34px 24px;
 }
 
-.navbar-header .navbar-collapse {
+.navbar-collapse {
 	display: inline-block;
     padding: 0;
 }
