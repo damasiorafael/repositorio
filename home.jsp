@@ -157,38 +157,40 @@ if (communities != null && communities.length != 0)
 {
 %>
 	<div class="col-md-9">		
-               <h3><fmt:message key="jsp.home.com1"/></h3>
-                <p><fmt:message key="jsp.home.com2"/></p>
-				<div class="list-group">
+		<h3><fmt:message key="jsp.home.com1"/></h3>
+		<p><fmt:message key="jsp.home.com2"/></p>
+		<div class="list-group">
 <%
-	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
-    for (int i = 0; i < communities.length; i++)
-    {
-%><div class="list-group-item row">
+		boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+	    for (int i = 0; i < communities.length; i++)
+	    {
+%>
+			<div class="list-group-item row">
 
-	<div class="col-md-12">
+				<div class="col-md-12">
 		
-		<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
+					<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
 <%
-        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
-        {
+				        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
+				        {
 %>
-		<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
+							<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
 <%
-        }
+        				}
+%>
+					</h4>
+				<p>
+					<%= communities[i].getMetadata("short_description") %>
+				</p>
+    			</div>
+    			<div class="col-md-3">
 
-%>
-		</h4>
-		<p><%= communities[i].getMetadata("short_description") %></p>
-    </div>
-    <div class="col-md-3">
-
-    </div>
-</div>                            
+    			</div>
+			</div>
 <%
-    }
+    	}
 %>
-	</div>
+		</div>
 	</div>
 <%
 }
