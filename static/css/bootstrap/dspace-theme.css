@@ -211,7 +211,7 @@ body {
     border-color: -moz-use-text-color -moz-use-text-color #2C99B9;
 }
 
-.navbar-collapse .btn-info {
+.btn-info {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
 	-moz-border-right-colors: none;
@@ -232,7 +232,7 @@ body {
 	padding-top: 0;
 	margin-left: -5px;
 }
-.navbar-collapse .btn-info:hover {
+.btn-info:hover {
 	-moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
