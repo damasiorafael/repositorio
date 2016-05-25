@@ -181,7 +181,7 @@ body {
 }
 
 /* BOTOES */
-.navbar-collapse .btn-primary {
+.btn-primary {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
 	-moz-border-right-colors: none;
@@ -190,8 +190,6 @@ body {
 	border-color: -moz-use-text-color -moz-use-text-color #066295;
 	border-image: none;
 	border-radius: 3px;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
 	border-style: none none solid;
 	border-width: 0 0 3px;
 	color: #fff;
@@ -200,9 +198,8 @@ body {
 	line-height: 36px;
 	width: auto;
 	padding-top: 0;
-	margin-left: -5px;
 }
-.navbar-collapse .btn-primary:hover {
+.btn-primary:hover {
 	-moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -264,6 +261,65 @@ body {
     background-color: #D74F4B;
     border-color: -moz-use-text-color -moz-use-text-color #B52D29;
 }
+
+.btn-default {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #E9E9E9;
+	border-color: -moz-use-text-color -moz-use-text-color #B6B6B6;
+	border-image: none;
+	border-radius: 3px;
+	border-style: none none solid;
+	border-width: 0 0 3px;
+	color: #fff;
+	font-size: 14px;
+	height: 43px;
+	line-height: 42px;
+	width: auto;
+	padding-top: 0;
+}
+.btn-default:hover {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #E9E9E9;
+    border-color: -moz-use-text-color -moz-use-text-color #B6B6B6;
+}
+
+/* custom buttons */
+.navbar-collapse .btn-primary {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #0092dd;
+	border-color: -moz-use-text-color -moz-use-text-color #066295;
+	border-image: none;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-style: none none solid;
+	border-width: 0 0 3px;
+	color: #fff;
+	font-size: 14px;
+	height: 32px;
+	line-height: 36px;
+	width: auto;
+	padding-top: 0;
+	margin-left: -5px;
+}
+.navbar-collapse .btn-primary:hover {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #0092dd;
+    border-color: -moz-use-text-color -moz-use-text-color #066295;
+}
+/* custom buttons */
 /* BOTOES */
 .breadcrumb {
 	border-radius: 0;
