@@ -287,6 +287,7 @@ body {
     -moz-border-top-colors: none;
     background-color: #E9E9E9;
     border-color: -moz-use-text-color -moz-use-text-color #B6B6B6;
+    color: #000;
 }
 
 /* custom buttons */
@@ -324,7 +325,7 @@ body {
 .breadcrumb {
 	border-radius: 0;
 	background: #00ADEE!important;
-	margin-bottom: 0;
+	margin-bottom: 15px;
 }
 .breadcrumb li {
 	display: inline-block;
@@ -366,6 +367,7 @@ body {
 .facet-kroton #facets {
 	background: transparent;
 	border: none;
+	margin-top: -15px;
 }
 
 .facetsBox .facet .facetName {
