@@ -93,5 +93,9 @@ body {
 }
 
 .facet-kroton {
-	background: #DBDBDB;
+	background: #F7F7F7;
+}
+.facet-kroton #facets {
+	background: transparent;
+	border: none;
 }
