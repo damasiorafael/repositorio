@@ -11,6 +11,7 @@ body {
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-color: #0092dd;
+    background-image: none;
     border-color: -moz-use-text-color -moz-use-text-color #066295;
     border-image: none;
     border-radius: 3px;
@@ -20,6 +21,8 @@ body {
     font-size: 14px;
     height: 43px;
     line-height: 27px;
+    padding-left: 15px; 
+    padding-right: 15px;
 }
 .btn-success:hover {
 	-moz-border-bottom-colors: none;
@@ -27,6 +30,7 @@ body {
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-color: #0092dd;
+    background-image: none;
     border-color: -moz-use-text-color -moz-use-text-color #066295;
     border-image: none;
     border-radius: 3px;
@@ -35,6 +39,8 @@ body {
     color: #fff;
     height: 43px;
     line-height: 27px;
+    padding-left: 15px; 
+    padding-right: 15px;
 }
 
 .navbar {
