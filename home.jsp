@@ -184,7 +184,7 @@ if (communities != null && communities.length != 0)
 				</p>
     			</div>
     			<div class="col-md-3">
-
+    				<dspace:include page="<%= navbar %>" />
     			</div>
 			</div>
 <%
