@@ -169,11 +169,11 @@ if (submissions != null && submissions.count() > 0)
 <%  
 						Bitstream logo = communities[i].getLogo();
 						if (showLogos && logo != null) { %>
-							<div class="col-md-12">
+							<div>
 <%
 						} else {
 %>
-							<div class="col-md-12">
+							<div>
 <%
 						}
 %>		
