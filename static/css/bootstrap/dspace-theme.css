@@ -391,3 +391,8 @@ body {
 .facetsBox .list-group-item a {
 	font-size: 12px;
 }
+
+/* tela login */
+main#content {
+	margin-top: 15px;
+}
