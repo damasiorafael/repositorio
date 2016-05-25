@@ -198,12 +198,9 @@ if (communities != null && communities.length != 0)
         				}
 %>
 					</h4>
-				<p>
-					<%= communities[i].getMetadata("short_description") %>
-				</p>
-    			</div>
-    			<div class="col-md-3">
-
+					<p>
+						<%= communities[i].getMetadata("short_description") %>
+					</p>
     			</div>
 			</div>
 <%
@@ -211,7 +208,9 @@ if (communities != null && communities.length != 0)
 %>
 		</div>
 	</div>
-	<dspace:include page="<%= navbar %>" />
+	<div class="col-md-3">
+		<dspace:include page="<%= navbar %>" />
+	</div>
 <%
 }
 %>
