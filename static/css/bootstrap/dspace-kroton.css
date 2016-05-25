@@ -29,6 +29,11 @@ body {
 	display: inline-block;
     padding: 0;
 }
+.navbar-collapse .form-control {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: 0;
+}
 .navbar-collapse .btn-primary {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
@@ -38,6 +43,8 @@ body {
 	border-color: -moz-use-text-color -moz-use-text-color #066295;
 	border-image: none;
 	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 	border-style: none none solid;
 	border-width: 0 0 3px;
 	color: #fff;
@@ -46,6 +53,7 @@ body {
 	line-height: 36px;
 	width: auto;
 	padding-top: 0;
+	margin-left: 0;
 }
 .navbar-collapse .btn-primary:hover {
 	-moz-border-bottom-colors: none;
