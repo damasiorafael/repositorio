@@ -179,6 +179,8 @@ body {
 	border-bottom-right-radius: 0;
 	margin-right: 0;
 }
+
+/* BOTOES */
 .navbar-collapse .btn-primary {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
@@ -206,9 +208,39 @@ body {
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
     background-color: #0092dd;
-    border-color: -moz-use-text-color -moz-use-text-color #066295;
+    border-color: -moz-use-text-color -moz-use-text-color #2C99B9;
 }
 
+.navbar-collapse .btn-info {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #4EBBDB;
+	border-color: -moz-use-text-color -moz-use-text-color #2C99B9;
+	border-image: none;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-style: none none solid;
+	border-width: 0 0 3px;
+	color: #fff;
+	font-size: 14px;
+	height: 32px;
+	line-height: 36px;
+	width: auto;
+	padding-top: 0;
+	margin-left: -5px;
+}
+.navbar-collapse .btn-info:hover {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #4EBBDB;
+    border-color: -moz-use-text-color -moz-use-text-color #066295;
+}
+/* BOTOES */
 .breadcrumb {
 	border-radius: 0;
 	background: #00ADEE!important;
