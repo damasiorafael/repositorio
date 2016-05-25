@@ -25,7 +25,6 @@
 <%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
 
 <%
-    /*
     String title = (String) request.getAttribute("dspace.layout.title");
     String navbar = (String) request.getAttribute("dspace.layout.navbar");
     boolean locbar = ((Boolean) request.getAttribute("dspace.layout.locbar")).booleanValue();
@@ -41,7 +40,6 @@
     String dsVersion = Util.getSourceVersion();
     String generator = dsVersion == null ? "DSpace" : "DSpace "+dsVersion;
     String analyticsKey = ConfigurationManager.getProperty("jspui.google.analytics.key");
-    */
 %>
 
 <!DOCTYPE html>
