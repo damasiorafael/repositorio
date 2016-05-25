@@ -106,15 +106,3 @@ span.batchimport-error-tab {
 span.batchimport-error-caused {
 	font-weight:bold;
 }
-
-
-/**
-	AJUSTES DAMASIO INTREPIDO 53
-*/
-body {
-	padding-top: 0!important;
-}
-.navbar {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}

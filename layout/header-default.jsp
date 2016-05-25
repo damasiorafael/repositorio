@@ -54,6 +54,7 @@
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-kroton.css" type="text/css" />
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -123,7 +124,7 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
+<header class="navbar navbar-fixed-top">
     <%
     if (!navbar.equals("off"))
     {
@@ -151,7 +152,7 @@
 		<h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>
         <fmt:message key="jsp.layout.header-default.brand.description" /> 
         </div>
-        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />
+        <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.png" alt="Kroton - Repositório Institucional" />
         </div>
 	</div>
 </div>	
