@@ -9,3 +9,7 @@ body {
 	padding-bottom: 0;
 	background: #DBDBDB;
 }
+
+.breadcrumb {
+ background: #00ADEE!important;
+}
