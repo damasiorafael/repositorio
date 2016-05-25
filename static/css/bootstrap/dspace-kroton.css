@@ -4,6 +4,39 @@
 body {
 	padding-top: 0px!important;
 }
+
+.btn-success {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #0092dd;
+    border-color: -moz-use-text-color -moz-use-text-color #066295;
+    border-image: none;
+    border-radius: 3px;
+    border-style: none none solid;
+    border-width: 0 0 3px;
+    color: #fff;
+    font-size: 14px;
+    height: 43px;
+    line-height: 27px;
+}
+.btn-success:hover {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #0092dd;
+    border-color: -moz-use-text-color -moz-use-text-color #066295;
+    border-image: none;
+    border-radius: 3px;
+    border-style: none none solid;
+    border-width: 0 0 3px;
+    color: #fff;
+    height: 43px;
+    line-height: 27px;
+}
+
 .navbar {
 	margin-bottom: 0;
 	padding-bottom: 0;
