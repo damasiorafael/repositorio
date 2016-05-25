@@ -141,7 +141,7 @@
                     <h1 class="title-header">Repositório Institucional</h1>
                 </div>
 
-                <dspace:include page="<%= //navbar %>" />
+                <dspace:include page="<%= navbar %>" />
             </div>
 <%
     }
