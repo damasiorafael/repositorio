@@ -45,7 +45,6 @@
     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
     String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html"));
     String sideNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-side.html"));
-   
 
     boolean feedEnabled = ConfigurationManager.getBooleanProperty("webui.feed.enable");
     String feedData = "NONE";
@@ -60,6 +59,10 @@
 %>
 
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
+
+	<div class="jumbotron">
+        <%= topNews %>
+	</div>
 
 <div class="row">
 <%
@@ -150,13 +153,16 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
+<div class="col-md-4">
+    <%= sideNews %>
+</div>
 </div>
 <div class="container row">
 <%
 if (communities != null && communities.length != 0)
 {
 %>
-	<div class="col-md-9">		
+	<div class="col-md-4">		
                <h3><fmt:message key="jsp.home.com1"/></h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
@@ -165,9 +171,16 @@ if (communities != null && communities.length != 0)
     for (int i = 0; i < communities.length; i++)
     {
 %><div class="list-group-item row">
-
+<%  
+		Bitstream logo = communities[i].getLogo();
+		if (showLogos && logo != null) { %>
+	<div class="col-md-3">
+        <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" /> 
+	</div>
+	<div class="col-md-9">
+<% } else { %>
 	<div class="col-md-12">
-		
+<% }  %>		
 		<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
 <%
         if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
@@ -180,9 +193,6 @@ if (communities != null && communities.length != 0)
 %>
 		</h4>
 		<p><%= communities[i].getMetadata("short_description") %></p>
-    </div>
-    <div class="col-md-3">
-
     </div>
 </div>                            
 <%
