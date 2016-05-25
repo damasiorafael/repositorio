@@ -13,6 +13,12 @@ body {
 	width: 100%;
 }
 
+.title-header {
+	background: url(../../../image/border-title.jpg) no-repeat 0 0;
+	margin-top: 17px;
+	padding: 38px 0 34px 24px;
+}
+
 .breadcrumb {
 	border-radius: 0;
 	background: #00ADEE!important;
