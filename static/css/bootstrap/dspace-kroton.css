@@ -43,8 +43,9 @@ body {
 	color: #fff;
 	font-size: 14px;
 	height: 32px;
-	line-height: 37px;
+	line-height: 36px;
 	width: auto;
+	padding-top: 0;
 }
 .navbar-collapse .btn-primary:hover {
 	-moz-border-bottom-colors: none;
