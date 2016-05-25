@@ -141,12 +141,8 @@
                         <img src="<%= request.getContextPath() %>/image/logo.png" alt="Kroton - Repositório Institucional" />
                     </a>
                     <h1 class="title-header">Repositório Institucional</h1>
-                </div>
-                <%=
-                /*
-                <dspace:include page="<%= navbar %>" />
-                */
-                %>
+                </div>                
+                <dspace:include page="<%= navbar %>" />                
             </div>
 <%
     }
