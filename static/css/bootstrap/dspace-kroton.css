@@ -21,8 +21,6 @@ body {
     font-size: 14px;
     height: 43px;
     line-height: 27px;
-    padding-left: 15px; 
-    padding-right: 15px;
 }
 .btn-success:hover {
 	-moz-border-bottom-colors: none;
@@ -39,8 +37,6 @@ body {
     color: #fff;
     height: 43px;
     line-height: 27px;
-    padding-left: 15px; 
-    padding-right: 15px;
 }
 
 .navbar {
