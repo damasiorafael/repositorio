@@ -79,6 +79,7 @@ body {
 
 .comuns-kroton .list-group {
 	box-shadow: none!important;
+	border-bottom: 1px solid #EEEEEE;
 }
 
 .comuns-kroton .list-group-item {
