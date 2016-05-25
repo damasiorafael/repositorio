@@ -396,3 +396,7 @@ body {
 main#content {
 	margin-top: 15px;
 }
+
+main#content .breadcrumb {
+	margin-top: -15px;
+}
