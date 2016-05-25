@@ -174,10 +174,7 @@ if (communities != null && communities.length != 0)
 <%  
 		Bitstream logo = communities[i].getLogo();
 		if (showLogos && logo != null) { %>
-	<div class="col-md-3">
-        <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" /> 
-	</div>
-	<div class="col-md-9">
+	<div class="col-md-12">
 <% } else { %>
 	<div class="col-md-12">
 <% }  %>		
