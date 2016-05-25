@@ -157,40 +157,45 @@ if (submissions != null && submissions.count() > 0)
 	{
 %>
 		<div class="col-md-9 comuns-kroton">
-               <h3><fmt:message key="jsp.home.com1"/></h3>
-                <p><fmt:message key="jsp.home.com2"/></p>
-				<div class="list-group">
+			<h3><fmt:message key="jsp.home.com1"/></h3>
+			<p><fmt:message key="jsp.home.com2"/></p>
+			<div class="list-group">
 <%
-	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
-    for (int i = 0; i < communities.length; i++)
-    {
-%><div class="list-group-item row">
-<%  
-		Bitstream logo = communities[i].getLogo();
-		if (showLogos && logo != null) { %>
-	<div class="col-md-12">
-<% } else { %>
-	<div class="col-md-12">
-<% }  %>		
-		<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
-<%
-        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
-        {
+				boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+			    for (int i = 0; i < communities.length; i++)
+	    		{
 %>
-		<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
+					<div class="list-group-item">
+<%  
+						Bitstream logo = communities[i].getLogo();
+						if (showLogos && logo != null) { %>
+							<div class="col-md-12">
 <%
-        }
+						} else {
+%>
+							<div class="col-md-12">
+<%
+						}
+%>		
+						<h4 class="list-group-item-heading"><a href="<%= request.getContextPath() %>/handle/<%= communities[i].getHandle() %>"><%= communities[i].getMetadata("name") %></a>
+<%
+					        if (ConfigurationManager.getBooleanProperty("webui.strengths.show"))
+					        {
+%>
+								<span class="badge pull-right"><%= ic.getCount(communities[i]) %></span>
+<%
+    	    				}
 
 %>
-		</h4>
-		<p><%= communities[i].getMetadata("short_description") %></p>
-    </div>
-</div>                            
+						</h4>
+						<p><%= communities[i].getMetadata("short_description") %></p>
+    					</div>
+					</div>                            
 <%
-    }
+    			}
 %>
-	</div>
-	</div>
+			</div>
+		</div>
 <%
 }
 %>
@@ -199,11 +204,11 @@ if (submissions != null && submissions.count() > 0)
     	int discovery_facet_cols = 3;
     %>
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
-</div>
+	</div>
 
-<div class="row">
-	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
-</div>
+	<div class="row">
+		<%@ include file="discovery/static-tagcloud-facet.jsp" %>
+	</div>
 	
-</div>
+	</div>
 </dspace:layout>
