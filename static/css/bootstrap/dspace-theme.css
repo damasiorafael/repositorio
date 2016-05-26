@@ -411,7 +411,7 @@ main#content .breadcrumb {
 
 
 /* ALERTAS */
-.alert-info {
+.alert-info, .panel-info .panel-heading {
 	background: #D4EBF6;
 	background-image: none;
 }
