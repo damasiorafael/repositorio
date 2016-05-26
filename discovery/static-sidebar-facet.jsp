@@ -58,7 +58,7 @@
 		    }
 		}
 	}
-	if (brefine) {
+	//if (brefine) {
 %>
 <div class="col-md-3 facet-kroton">
 <h3 class="facets"><fmt:message key="jsp.search.facet.refine" /></h3>
@@ -123,5 +123,5 @@
 	    %></ul></div><%
 	}
 %></div></div><%
-	}
+	
 %>
