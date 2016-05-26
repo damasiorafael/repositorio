@@ -54,7 +54,10 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a>
+         <a class="navbar-brand" href="<%= request.getContextPath() %>/">
+          <img src="<%= request.getContextPath() %>/image/logo.png" alt="DSpace logo" />
+         </a>
+         <h1 class="title-header">Repositório Institucional</h1>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
