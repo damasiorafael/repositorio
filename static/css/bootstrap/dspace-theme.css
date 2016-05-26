@@ -408,3 +408,10 @@ main#content {
 main#content .breadcrumb {
 	margin-top: -15px;
 }
+
+
+/* ALERTAS */
+.alert-info {
+	background: #D4EBF6;
+	background-image: none;
+}
