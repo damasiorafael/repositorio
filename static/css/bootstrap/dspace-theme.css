@@ -448,3 +448,8 @@ main#content .breadcrumb {
 	background: #f5f5f5;
 	background-image: none;
 }
+
+.panel-warning > .panel-heading {
+	background-image: none;
+	background-color: #FAF2CC;
+}
