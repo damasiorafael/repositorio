@@ -262,6 +262,33 @@ body {
     border-color: -moz-use-text-color -moz-use-text-color #B52D29;
 }
 
+.btn-warning {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #ED9A25;
+	border-color: -moz-use-text-color -moz-use-text-color #CB7803;
+	background-image: none;
+	border-radius: 3px;
+	border-style: none none solid;
+	border-width: 0 0 3px;
+	color: #fff;
+	font-size: 14px;
+	height: 43px;
+	line-height: 42px;
+	width: auto;
+	padding-top: 0;
+}
+.btn-warning:hover {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ED9A25;
+    border-color: -moz-use-text-color -moz-use-text-color #CB7803;
+}
+
 .btn-default {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
