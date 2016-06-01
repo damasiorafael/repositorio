@@ -450,6 +450,6 @@ main#content .breadcrumb {
 }
 
 .panel-warning > .panel-heading {
-	background-image: none;
-	background-color: #FAF2CC;
+	background-image: none!important;
+	background-color: #FAF2CC!important;
 }
