@@ -158,8 +158,8 @@ if (submissions != null && submissions.count() > 0)
 %>
 		<div class="col-md-9 comuns-kroton">
 			<div>
-				<h3>Bem-vindo ao Repositório Institucional da Kroton!</h3>
 				<p>
+					Bem-vindo ao Repositório Institucional da Kroton!<br />
 					O Repositório Institucional da Kroton é administrado pela Diretoria de Pós-Graduação Stricto Sensu da DDI.<br />
 					É um espaço para publicação e consulta da produção intelectual de docentes e alunos em formato digital.<br />
 					O acesso é gratuito e disponível para toda a comunidade da Kroton e público em geral.<br />
