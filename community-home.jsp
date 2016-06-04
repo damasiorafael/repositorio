@@ -86,7 +86,11 @@
 <%
             }
 %>
-		<small><fmt:message key="jsp.community-home.heading1"/></small>
+		<small>
+      <%--
+      <fmt:message key="jsp.community-home.heading1"/>
+      --%>
+    </small>
         <a class="statisticsLink btn btn-info" href="<%= request.getContextPath() %>/handle/<%= community.getHandle() %>/statistics"><fmt:message key="jsp.community-home.display-statistics"/></a>
 		</h2>
 	</div>
