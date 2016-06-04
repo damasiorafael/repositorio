@@ -86,7 +86,10 @@
          <a class="navbar-brand" href="<%= request.getContextPath() %>/">
           <img src="<%= request.getContextPath() %>/image/logo.png" alt="DSpace logo" />
          </a>
-         <h1 class="title-header">Repositório Institucional</h1>
+         <h1 class="title-header">
+          Repositório Institucional
+          <span>Banco de Produção Intelectual </span>
+         </h1>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
