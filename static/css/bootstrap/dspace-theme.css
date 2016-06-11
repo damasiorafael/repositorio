@@ -458,3 +458,69 @@ main#content .breadcrumb {
 	background-image: none!important;
 	background-color: #FAF2CC!important;
 }
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*   FOOTER                                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+#footer {
+    padding: 30px 0;
+    z-index: 9;
+    background-color: #4D4D4D;
+    font-size: 12px;
+    clear: both;
+}
+
+#footer .row {
+    position: relative;
+}
+
+.menu-footer-1 {
+    padding-left: 60px;
+}
+
+.menu-footer-1 ul, .menu-footer-2 ul {
+    list-style: none;
+}
+
+.menu-footer ul li a {
+    color: #FFF;
+    line-height: 30px;
+}
+
+.menu-footer ul li a:hover {
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.copy-content {
+    padding-top: 30px;
+}
+
+.copy-content .logo_rodape {
+    display: inline-block;
+}
+
+.copy-content .logo_rodape img {
+    margin-top: -18px!important;
+}
+
+.copy-content span {
+    color: #FFF;
+    font-size: 11px;
+}
+
+.copy-content .logo_intrepido {
+    position: absolute;
+    right: 0;
+}
+
+/* geral */
+.display-none {
+    display: none!important;
+}
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*   FOOTER                                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/

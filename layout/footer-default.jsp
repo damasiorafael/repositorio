@@ -37,6 +37,25 @@
 %>
 </div>
 </main>
+<section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copy-content text-center">
+                    <a title="Home" class="logo logo_rodape" href="index.php">
+                        <div class="logo-container">
+                            <img alt="Logo" src="<%= request.getContextPath() %>/image/mini_logo_topo.png">
+                        </div>
+                    </a>
+                    <span>Kroton Educacional &copy; 2015. Todos os direitos reservados - Portal Stricto Sensu</span>
+                    <a target="blank" title="Intrépido 53" class="logo_intrepido" href="http://www.intrepido53.com.br">
+                        <div class="logo-container">
+                            <img alt="Logo" src="<%= request.getContextPath() %>/image/logo_intrepido.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
             <%-- Page footer --%>
     </body>
 </html>
