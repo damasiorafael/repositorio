@@ -46,7 +46,7 @@
                             <img alt="Logo" src="<%= request.getContextPath() %>/image/mini_logo_topo.png">
                         </div>
                     </a>
-                    <span>Kroton Educacional &copy; 2015. Todos os direitos reservados - Repositório Institucional - Banco de Produção Intelectual</span>
+                    <span>Kroton Educacional &copy; 2016. Todos os direitos reservados - Repositório Institucional - Banco de Produção Intelectual</span>
                     <a target="blank" title="Intrépido 53" class="logo_intrepido" href="http://www.intrepido53.com.br">
                         <div class="logo-container">
                             <img alt="Logo" src="<%= request.getContextPath() %>/image/logo_intrepido.png">
