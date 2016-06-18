@@ -88,7 +88,7 @@
          </a>
          <h1 class="title-header">
           Repositório Institucional
-          <span>Banco de Produção Intelectual </span>
+          <span>Banco de Produção Acadêmica e Intelectual </span>
          </h1>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
