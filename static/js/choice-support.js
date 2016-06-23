@@ -589,7 +589,7 @@ function DSpaceToggleAuthorityLock(button, authInputID)
 
 $(document).ready(function(){
   function retiraNumeros(){
-    $(".list-group-item-heading").each(function(){
+    $(".list-group-item-heading, .media-heading").each(function(){
       var $this = $(this);
       var texto = $this.find("a").text();
       texto = texto.split(" - ")[1];
