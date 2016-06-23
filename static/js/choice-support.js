@@ -586,3 +586,10 @@ function DSpaceToggleAuthorityLock(button, authInputID)
     authInput.readOnly = newLocked;
     return false;
 }
+
+function retiraNumeros(){
+    var texto = $(".list-group-item-heading").text();
+    console.log(texto);
+}
+
+retiraNumeros();
