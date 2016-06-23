@@ -587,9 +587,11 @@ function DSpaceToggleAuthorityLock(button, authInputID)
     return false;
 }
 
-function retiraNumeros(){
-    var texto = $(".list-group-item-heading a").text();
-    console.log(texto);
-}
+$(document).ready(function(){
+  function retiraNumeros(){
+      var texto = $(".list-group-item-heading a").text();
+      console.log(texto);
+  }
 
-retiraNumeros();
+  retiraNumeros();
+});
