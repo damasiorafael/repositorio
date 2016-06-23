@@ -588,7 +588,7 @@ function DSpaceToggleAuthorityLock(button, authInputID)
 }
 
 function retiraNumeros(){
-    var texto = $(".list-group-item-heading").text();
+    var texto = $(".list-group-item-heading a").text();
     console.log(texto);
 }
 
