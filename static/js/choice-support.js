@@ -589,8 +589,12 @@ function DSpaceToggleAuthorityLock(button, authInputID)
 
 $(document).ready(function(){
   function retiraNumeros(){
-      var texto = $(".list-group-item-heading a").text();
-      console.log(texto);
+    $(".list-group-item-heading").each(function(){
+      var $this = $(this);
+      var texto = $this.find("a").text();
+      texto = texto.split(" - ")[1];
+      $this.find("a").text(texto);
+    });
   }
 
   retiraNumeros();
