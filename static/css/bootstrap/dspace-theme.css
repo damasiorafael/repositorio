@@ -402,6 +402,10 @@ body {
     position: relative;
 }
 
+.col-md-3 > .col-md-3.facet-kroton {
+	width: 100%!important;
+}
+
 .facet-kroton {
 	background: #F7F7F7;
 	margin-top: -15px;
